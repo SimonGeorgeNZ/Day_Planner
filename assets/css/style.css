@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+
+}
+
+.container {
+    min-width: 100%;
+}
+
+.row {
+
+}
+
+.bb {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
