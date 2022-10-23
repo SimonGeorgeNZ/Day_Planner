@@ -1,21 +1,32 @@
+/*--------------------------Generic styling------------------*/
 html {
     height: 100%;
 }
 
 body {
+    padding: 20px;
 
 }
 
-.container {
-    min-width: 100%;
-}
 
-.row {
-
+p {
+    margin-top: 10px;
 }
 
 .bb {
     border-color: black;
     border-width: 2px;
     border-style: solid;
+}
+
+
+/*--------------------------Left------------------*/
+
+
+
+
+/*--------------------------Right------------------*/
+
+.internal{
+    padding: 0px !important;
 }
