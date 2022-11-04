@@ -33,11 +33,13 @@ body {
     padding-bottom: 2vh;
 }
 
-#bgColor {
-    background-color: aqua;
+
+.inner { 
+    padding: 2vh;   
 }
 
-.inner {    
-    margin-top: 2vh;
-    margin-left: 2vh;
-}
+/* .displayMonth {
+    min-height: 40vh;
+    min-width: 30%;
+
+} */
