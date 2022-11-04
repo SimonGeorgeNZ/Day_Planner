@@ -22,16 +22,16 @@
 
                 </div>
                 <div class="col-9 bb">
-                <div class="container-fluid">
-                        <div class="btn-group d-flex justify-content-evenly layout" role="group" aria-label="Basic radio toggle button group">
+                <div class="container-fluid layout">
+                        <div class="btn-group d-flex justify-content-evenly" role="group" aria-label="Basic radio toggle button group">
                             <input onclick="changeBlue()" type="radio" class="btn-check" name="btnradio" id="changeRed" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary" for="changeRed">Blue</label>
+                            <label class="btn btn-outline-primary" for="changeRed">Month</label>
                             
                             <input onclick="changeRed()" type="radio" class="btn-check" name="btnradio" id="changeBlue" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="changeBlue">Red</label>
+                            <label class="btn btn-outline-primary" for="changeBlue">Week</label>
                             
                             <input onclick="changeWhite()" type="radio" class="btn-check" name="btnradio" id="changePink" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="changePink">White</label>
+                            <label class="btn btn-outline-primary" for="changePink">Day</label>
                         </div> 
                     </div>
                 </div>
@@ -45,7 +45,13 @@
                     Upcoming<br>
                 </p>
                 </div>
-                <div class="col-9 bb" id = "bgColor">
+                <div class="col-9 bb layout">
+                    <div class=" bb" id ="bgColor">
+                        <p class="inner" id="inner">
+                            Stuff
+                        </p>
+
+                    </div>
                     
                 </div>
             </div>

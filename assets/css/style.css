@@ -36,3 +36,8 @@ body {
 #bgColor {
     background-color: aqua;
 }
+
+.inner {    
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
