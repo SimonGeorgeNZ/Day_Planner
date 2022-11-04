@@ -4,14 +4,10 @@ html {
 }
 
 body {
-    padding: 20px;
+    padding: 2vh;
 
 }
 
-
-p {
-    margin-top: 10px;
-}
 
 .bb {
     border-color: black;
@@ -21,13 +17,22 @@ p {
 
 
 
-/*--------------------------Left------------------*/
+/*--------------------------Left------------------*/ 
+
+.leftMenu {
+    padding-top: 2vh;
+}
 
 
 
 
 /*--------------------------Right------------------*/
 
-.internal{
-    padding: 0px !important;
+.layout {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#bgColor {
+    background-color: aqua;
 }

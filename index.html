@@ -7,7 +7,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description" content="" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <title>Planner by Simon</title>
     </head>
@@ -15,7 +14,7 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3 bb">
+                <div class="col-3 bb leftMenu">
                     <p>
                         Menu
                         
@@ -23,13 +22,22 @@
 
                 </div>
                 <div class="col-9 bb">
-                <p>
-                    Nothing
-                </p>
+                <div class="container-fluid">
+                        <div class="btn-group d-flex justify-content-evenly layout" role="group" aria-label="Basic radio toggle button group">
+                            <input onclick="changeBlue()" type="radio" class="btn-check" name="btnradio" id="changeRed" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="changeRed">Blue</label>
+                            
+                            <input onclick="changeRed()" type="radio" class="btn-check" name="btnradio" id="changeBlue" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="changeBlue">Red</label>
+                            
+                            <input onclick="changeWhite()" type="radio" class="btn-check" name="btnradio" id="changePink" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="changePink">White</label>
+                        </div> 
+                    </div>
                 </div>
             </div>
             <div class="row buttonTop">
-                <div class="col-3 bb">
+                <div class="col-3 bb leftMenu">
                 <p>
                     Add<br>
                     Favorites<br>
@@ -37,23 +45,8 @@
                     Upcoming<br>
                 </p>
                 </div>
-                <div class="col-9 bb bgColor">
-                    <br>
-                    <!-- <div class="container-fluid">
-                        <div class="btn-group d-flex justify-content-evenly" role="group" aria-label="Basic radio toggle button group">
-                            <input onclick="changeRed()" type="radio" class="btn-check" name="btnradio" id="changeRed" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary" for="changeRed">Days</label>
-                            
-                            <input type="radio" class="btn-check" name="btnradio" id="changeBlue" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="changeBlue">Weeks</label>
-                            
-                            <input type="radio" class="btn-check" name="btnradio" id="changePink" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio3">Month</label>
-                        </div> 
-                    </div> -->
-                    <div id="test" class="btn bb">
-                        <a id="test" class="test" onclick="test()"><span>Test</span></a>
-                    </div>
+                <div class="col-9 bb" id = "bgColor">
+                    
                 </div>
             </div>
         </div>
@@ -63,4 +56,5 @@
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/JS/scripts.js"></script>
