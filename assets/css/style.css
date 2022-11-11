@@ -38,8 +38,6 @@ body {
     padding: 2vh;   
 }
 
-/* .displayMonth {
-    min-height: 40vh;
-    min-width: 30%;
-
-} */
+.displayMonth {
+    min-height: 4vh;
+}

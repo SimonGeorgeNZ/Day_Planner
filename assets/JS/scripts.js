@@ -1,11 +1,11 @@
-$(document).ready(function () {
-    document.getElementById('innerMonth').style.display = "block";
+$(document).on('DOMContentLoaded', function () {
+    document.getElementById('innerMonth').style.display = "d-block";
     document.getElementById('innerDay').style.display = "none";
     document.getElementById('innerWeek').style.display = "none";
 });
 
 function changeMonth () {
-    document.getElementById('innerMonth').style.display = "block";
+    document.getElementById('innerMonth').style.display = "";
     document.getElementById('innerWeek').style.display = "none";
     document.getElementById('innerDay').style.display = "none";
 }

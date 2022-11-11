@@ -1,3 +1,3 @@
-$(document).ready(function () {
-    alert("Hello")
-});
+// $(document).on('DOMContentLoaded', function () {
+//     alert("Hello")
+// }); 
