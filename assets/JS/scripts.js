@@ -1,28 +1,37 @@
-// var year = new Date().getFullYear();
-var year = 2024;
-let january = 31;
+var todaysDate = new Date();
+var year = todaysDate.getFullYear();
+var month = (todaysDate.getMonth())
+// var year = 2024;
+let monthOrder = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let january = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 if (year % 4 == 0){
-    var february = 29
+    var february = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29];
 } else {
-    var february = 28
+    var february = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28];
 }
-let march = 31;
-let april = 30;
-let may = 31;
-let june = 30;
-let july = 31;
-let august = 31;
-let september = 30;
-let october = 31;
-let november = 30;
-let december = 31;
+let march = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+let april = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];;
+let may = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+let june = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];;
+let july = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+let august = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+let september = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];;
+let october = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+let november = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];;
+let december = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
 
-// if (year % 4 == 0){
-//     console.log("yes");}
 
-console.log(year);
+$(document).on('DOMContentLoaded', function () {
 
-console.log(february);
+    console.log(monthOrder[month])
+});
+
+
+// console.log(todaysDate);
+
+// console.log(year);
+
+// console.log(february);
 
 $(document).on('DOMContentLoaded', function () {
     document.getElementById('innerMonth').style.display = "d-block";
