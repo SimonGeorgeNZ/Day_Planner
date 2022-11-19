@@ -23,13 +23,13 @@ var monthOrder = [January, February, March, April, May, June, July, August, Sept
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 
-$(document).on('DOMContentLoaded', function () {
+// $(document).on('DOMContentLoaded', function () {
 
-    let thisMonth = monthOrder[month];
-    let thisMonthName = monthNames[month];
-    console.log(thisMonth)
-    console.log(thisMonthName) 
-});
+//     let thisMonth = monthOrder[month];
+//     let thisMonthName = monthNames[month];
+//     console.log(thisMonth)
+//     console.log(thisMonthName) 
+// });
 
 
 // console.log(todaysDate);
@@ -62,17 +62,20 @@ function changeDay () {
     document.getElementById('innerMonth').style.display = "none";
 }
 
-// function createMonth () {
-//     month = monthOrder[month]
-//     console.log(monthOrder[month])
-//     // for (var i = 0; i < a.statistics.seasons.length; i++) {
-//         document.getElementById('innerMonth');
-//         const dayBox = document.createElement('div');
-//         dayBox.className = 'col-sm-4 displayMonth bb layout';
-//         dayBox.innerHTML = 'Month';
-//         document.getElementById('innerMonth').appendChild(dayBox);
-//     // }
-// }
+function createMonth () {
+    let thisMonth = monthOrder[month];
+    let thisMonthName = monthNames[month];
+    console.log(thisMonth)
+    console.log(thisMonthName)
+    month = monthOrder[month]
+    for (var i = 0; i < thisMonth.length; i++) {
+        document.getElementById('innerMonth');
+        const dayBox = document.createElement('div');
+        dayBox.className = 'col-sm-4 displayMonth bb layout';
+        dayBox.innerHTML = thisMonth[i];
+        document.getElementById('innerMonth').appendChild(dayBox);
+    }
+}
 
 
 
