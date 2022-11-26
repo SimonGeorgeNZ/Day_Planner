@@ -82,22 +82,14 @@ function createMonth () {
     for (var i = 0; i < thisMonth.length; i++) {
         let matchedDate = new Date()
         matchedDate.setFullYear(year, month, i)
-        console.log(matchedDate)
         document.getElementById('innerMonth');
         const dayBox = document.createElement('div');
         dayBox.className = 'col-sm-12 displayMonth bb layout';
-        dayBox.innerHTML = thisMonth[i];
+        dayBox.innerHTML = dayNames[matchedDate.getDay()] + " " + thisMonth[i];
         document.getElementById('innerMonth').appendChild(dayBox);
-            thisMonth.forEach(element => {
-                if (thisMonth[i] + 1 === dateNumber){
-                                        
-                } 
-                
-            });
     } 
 }
 
-// dayBox.innerHTML = todaysDate.getDate() + " " + dayNames[todaysDate.getDay()];
 
 
 function createWeek() {
