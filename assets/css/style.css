@@ -38,10 +38,21 @@ body {
     padding: 2vh;   
 }
 
-.displayMonth {
-    min-height: 4vh;
-}
-
 .title {
     padding-bottom: 2vh;
 }
+
+/*--------------------------Month------------------*/
+
+
+.displayMonthLeft {
+    min-height: 4vh;
+    padding-left: 3vw;
+}
+
+.displayMonthRight {
+    min-height: 4vh;
+}
+
+
+/*--------------------------Day------------------*/

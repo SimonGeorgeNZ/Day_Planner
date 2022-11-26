@@ -26,6 +26,7 @@ var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 var monthOrder = [January, February, March, April, May, June, July, August, September, October, November, December];
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+var hours = ["0000", "0100", "0200", "0300", "0400", '0500', "0600", "0700","0800","0900", "1000", "1100", "1200", "1300", "1400", "1500", "1600", "1700", "1800", "1900", "2000", "2100", "2200", "2300" ]
 
 // $(document).on('DOMContentLoaded', function () {
 
@@ -58,13 +59,13 @@ function changeMonth () {
 }
 
 function changeWeek () {
-    document.getElementById('innerWeek').style.display = "block";
+    document.getElementById('innerWeek').style.display = "";
     document.getElementById('innerDay').style.display = "none";
     document.getElementById('innerMonth').style.display = "none";
 }
 
 function changeDay () {
-    document.getElementById('innerDay').style.display = "block";
+    document.getElementById('innerDay').style.display = "";
     document.getElementById('innerWeek').style.display = "none";
     document.getElementById('innerMonth').style.display = "none";
 }
@@ -74,19 +75,17 @@ function createMonth () {
     let thisMonth = monthOrder[month];
     let thisMonthName = monthNames[month];
     let thisYear = year
-    // console.log(thisDay)
-    // console.log(thisMonth)
-    // console.log(thisMonthName)
-    // console.log(dateNumber)
-    // console.log(todaysDate)
     for (var i = 0; i < thisMonth.length; i++) {
         let matchedDate = new Date()
         matchedDate.setFullYear(year, month, i)
         document.getElementById('innerMonth');
-        const dayBox = document.createElement('div');
-        dayBox.className = 'col-sm-12 displayMonth bb layout';
-        dayBox.innerHTML = dayNames[matchedDate.getDay()] + " " + thisMonth[i];
-        document.getElementById('innerMonth').appendChild(dayBox);
+        const dayBoxleft = document.createElement('div');
+        const dayBoxright = document.createElement('div');
+        dayBoxleft.className = 'col-sm-3 displayMonthLeft bb layout';
+        dayBoxright.className = 'col-sm-9 displayMonthRight bb layout';
+        dayBoxleft.innerHTML = dayNames[matchedDate.getDay()] + " " + thisMonth[i];
+        document.getElementById('innerMonth').appendChild(dayBoxleft);
+        document.getElementById('innerMonth').appendChild(dayBoxright);
     } 
 }
 
@@ -96,19 +95,26 @@ function createWeek() {
     let weekOrder = dayNames; 
     for (var a = 0; a < weekOrder.length; a++) {
         document.getElementById('innerWeek');
-        const dayBox = document.createElement('div');
-        dayBox.className = 'col-sm-12 displayMonth bb layout';
-        dayBox.innerHTML = weekOrder[a];
-        document.getElementById('innerWeek').appendChild(dayBox);
-        // if (i + 1 === dateNumber){
-        //     dayBox.innerHTML = thisMonth[i] + " " + thisDay;
-        // }   
-        // console.log(weekOrder[i])
-        // console.log(i)
+        const dayBoxleft = document.createElement('div');
+        const dayBoxright = document.createElement('div');
+        dayBoxleft.className = 'col-sm-3 displayMonthLeft bb layout';
+        dayBoxright.className = 'col-sm-9 displayMonthRight bb layout';
+        dayBoxleft.innerHTML = weekOrder[a];
+        document.getElementById('innerWeek').appendChild(dayBoxleft);
+        document.getElementById('innerWeek').appendChild(dayBoxright);
      
     }   
 }
 
-// while(todaysDate.getDay()!= 1) todaysDate.setDate(--dateNumber);
 
-// console.log(todaysDate.getDay()1), todaysDate.setDate(--dateNumber);
+function createDay() {
+    for (h = 0; h < hours.length; h++) {
+        document.getElementById('innerDay');
+        const dayDivide = document.createElement('div');
+        dayDivide.className = 'col-sm-12 dayDivide bb layout';
+        dayDivide.innerHTML = hours[h];
+        document.getElementById('innerDay').appendChild(dayDivide);
+    }
+}
+
+
