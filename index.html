@@ -28,7 +28,7 @@
                             <input onclick="changeMonth()" type="radio" class="btn-check" name="btnradio" id="changeMonth" autocomplete="off" checked>
                             <label class="btn btn-outline-primary" for="changeMonth">Month</label>
                             
-                            <input onclick="changeWeek()" type="radio" class="btn-check" name="btnradio" id="changeWeek" autocomplete="off">
+                            <input onclick="changeWeek(); createWeek()" type="radio" class="btn-check" name="btnradio" id="changeWeek" autocomplete="off">
                             <label class="btn btn-outline-primary" for="changeWeek">Week</label>
                             
                             <input onclick="changeDay()" type="radio" class="btn-check" name="btnradio" id="changeDay" autocomplete="off">
@@ -49,17 +49,19 @@
                 <div class="col-9 bb layout">
                     <div class="container-fluid">
                         <div class="row bb inner" id="innerMonth">
-                            
+                            <div class="title">
+                                Month
+                            </div>
                         </div>
                     </div>
                     <div class="container-fluid">
                         <div class="row bb inner" id="innerWeek">
-                            <Div>
+                            <div class="title">
                                 Week
-                            </Div>
+                            </div>
                         </div>
                         <div class="row bb inner" id="innerDay">
-                            <div>
+                            <div class="title">
                                 Day
                             </div>
                         </div>
